@@ -1,7 +1,8 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -10,7 +11,8 @@ body {
     transform: translateZ(-999px) scale(1.07);
 }
 
-.header__content {
+.header__content,
+.menu__content {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -31,4 +33,35 @@ body {
     padding-bottom: 5%;
     font-size: 1em;
     color: white;
+}
+
+.menu {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #ece9e9;
+}
+
+.title-h1 {
+    font-size: 2em;
+}
+
+.dish {
+    display: inline-block;
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    vertical-align: top;
+}
+
+.subtitle-h6 {
+    margin-bottom: -1%;
+    font: 300 1em 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.dish-ingredients__text {
+    padding: 0 12% 0 12%;
+    font: 1em 'Open Sans', sans-serif;
+    line-height: 1.5em;
 }
