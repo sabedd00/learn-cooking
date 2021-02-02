@@ -5,6 +5,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
+/* HEADER */
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/header_bg.png) no-repeat fixed center;
     background-size: cover;
@@ -12,7 +13,8 @@ body, html {
 }
 
 .header__content,
-.menu__content {
+.menu__content,
+.additional-culinary-articles__content {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -35,6 +37,7 @@ body, html {
     color: white;
 }
 
+/* MENU */
 .menu {
     padding-top: 1%;
     text-align: center;
@@ -64,4 +67,70 @@ body, html {
     padding: 0 12% 0 12%;
     font: 1em 'Open Sans', sans-serif;
     line-height: 1.5em;
+}
+
+/* ADDITIONAL CULINARY ARTICLES  */
+.additional-culinary-articles {
+    padding: 5% 0 5% 0;
+}
+
+.additional-culinary-articles__item {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+    vertical-align: top;
+}
+
+.additional-culinary-articles__img {
+    height: 400px;
+    background-size: cover;
+}
+
+.article-illustration-tl {
+    background-image: url("../images/article_illuctration_tl.jpeg");
+}
+
+.article-illustration-tr {
+    background-image: url("../images/article_illustration_tr.jpeg");
+}
+
+.article-illustration-b {
+    background-image: url("../images/article_illustration_b.jpeg");
+}
+
+.subtitle-h3 {
+    margin-top: 15%;
+    padding: 0 10% 0 10%;
+    font-size: 2em;
+}
+
+.additional-culinary-articles__link {
+    position: relative;
+    padding-bottom: 1%;
+    font: 400 1em 'Comfortaa', sans-serif;
+    text-decoration: none;
+    text-underline-position: under;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.0;
+    color: black;
+}
+
+.additional-culinary-articles__link:hover {
+    text-decoration: none;
+}
+
+.additional-culinary-articles__link:after {
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, .5, 0, 1);
+    border-radius: 1em;
+    border-top: .1em solid #000000;
+    content: "";
+}
+
+.additional-culinary-articles__link:hover:after {
+    right: 0;
 }
