@@ -15,7 +15,8 @@ body, html {
 .header__content,
 .menu__content,
 .additional-culinary-articles__content,
-.reviews__content {
+.reviews__content,
+.learning-outcomes__content {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -105,7 +106,8 @@ body, html {
     font-size: 2em;
 }
 
-.additional-culinary-articles__link {
+.additional-culinary-articles__link,
+.learning-outcomes__link {
     position: relative;
     padding-bottom: 1%;
     font: 400 1em 'Comfortaa', sans-serif;
@@ -117,11 +119,13 @@ body, html {
     color: black;
 }
 
-.additional-culinary-articles__link:hover {
+.additional-culinary-articles__link:hover,
+.learning-outcomes__link:hover {
     text-decoration: none;
 }
 
-.additional-culinary-articles__link:after {
+.additional-culinary-articles__link:after,
+.learning-outcomes__link:after {
     position: absolute;
     right: 100%;
     bottom: .14em;
@@ -132,7 +136,8 @@ body, html {
     content: "";
 }
 
-.additional-culinary-articles__link:hover:after {
+.additional-culinary-articles__link:hover:after,
+.learning-outcomes__link:hover:after {
     right: 0;
 }
 
@@ -195,4 +200,53 @@ body, html {
 .review__text {
     margin-top: 5%;
     font: 500 1em 'Comfortaa', sans-serif;
+}
+
+/* LEARNING OUTCOMES */
+.learning-outcomes {
+    padding: 4% 0 5% 0;
+}
+
+.learning-outcomes__text {
+    margin: 1% 0 2% 0;
+    font: 500 1em 'Comfortaa', sans-serif;
+}
+
+.slideshow-of-learning-outcomes {
+    height: 300px;
+    width: 100%;
+    margin: 0 0 2% 0;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideshow-of-learning-outcomes > div {
+    width: 2526px;
+    background: url(../images/slideshow_of_learning_outcomes.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideshow-of-learning-outcomes .first-mover-of-slideshow {
+    animation: moveSlideshow 8s linear infinite;
+}
+
+.slideshow-of-learning-outcomes .second-mover-of-slideshow {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -300px;
+    animation: moveSlideshow 8s linear infinite;
+}
+
+.slideshow-of-learning-outcomes:hover .second-mover-of-slideshow {
+    opacity: 1;
+}
+
+@keyframes moveSlideshow {
+    80% {
+        transform: translateX(-41%);
+    }
 }
