@@ -250,3 +250,14 @@ body, html {
         transform: translateX(-41%);
     }
 }
+
+/* FOOTER */
+.footer {
+    padding: 1%;
+    background-color: #ece9e9;
+    text-align: center;
+}
+
+.footer__text {
+    font: 500 .9em 'Comfortaa', sans-serif;
+}
