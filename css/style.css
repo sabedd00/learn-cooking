@@ -14,7 +14,8 @@ body, html {
 
 .header__content,
 .menu__content,
-.additional-culinary-articles__content {
+.additional-culinary-articles__content,
+.reviews__content {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -133,4 +134,65 @@ body, html {
 
 .additional-culinary-articles__link:hover:after {
     right: 0;
+}
+
+/* REVIEWS */
+.reviews {
+    background-color: #ece9e9;
+}
+
+.first-review {
+    padding-top: 1%;
+}
+
+.first-review__img {
+    display: inline-block;
+    height: 350px;
+    width: 45%;
+    background-image: url("../images/illustration_of_the_first_review.jpeg");
+    background-size: cover;
+}
+
+.first-review__content {
+    display: inline-block;
+    width: 45%;
+    margin: 1% 0 0 5%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.second-review {
+    padding: 3% 0 5% 0;
+}
+
+.second-review__img {
+    float: right;
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    background-image: url("../images/illustration_of_the_second_review.jpeg");
+    background-size: cover;
+}
+
+.second-review__content {
+    display: inline-block;
+    width: 40%;
+    margin: 3% 5% 0 5%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.subtitle-h4 {
+    font: 300 1em 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title-h2 {
+    font-size: 2em;
+}
+
+.review__text {
+    margin-top: 5%;
+    font: 500 1em 'Comfortaa', sans-serif;
 }
