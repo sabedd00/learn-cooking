@@ -1,0 +1,120 @@
+@media only screen and (max-width: 600px) {
+
+    /* HEADER */
+    .header__content,
+    .menu__content,
+    .additional-culinary-articles__content,
+    .learning-outcomes__content,
+    .reviews__content {
+        width: 90%;
+    }
+
+    .header-logo__img {
+        width: 80%;
+    }
+
+    .header__title {
+        font-size: 2em;
+    }
+
+    .header__text {
+        font-size: .9em;
+    }
+
+    /* MENU */
+    .menu {
+        padding-bottom: 1%;
+    }
+
+    .dish {
+        display: block;
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    .dish .subtitle-h6 {
+        font: 400 .9em 'Comfortaa', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dish-ingredients__text {
+        font: .9em 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ADDITIONAL CULINARY ARTICLES  */
+    .additional-culinary-articles__item {
+        width: 100%;
+        display: inline;
+    }
+
+    .additional-culinary-articles__img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .additional-culinary-articles .subtitle-h3 {
+        font-size: 1.5em;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .additional-culinary-articles__link,
+    .learning-outcomes__link {
+        font: 400 .9em 'Comfortaa', sans-serif;
+    }
+
+    /* REVIEWS */
+    .first-review {
+        margin-top: 10%;
+    }
+
+    .first-review__img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .first-review__content {
+        display: inline;
+    }
+
+    .second-review {
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    .second-review__img {
+        height: 250px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .second-review__content {
+        display: inline;
+    }
+
+    .subtitle-h4 {
+        font: 300 .8em 'Comfortaa', sans-serif;
+    }
+
+    .title-h2 {
+        font-size: 2em;
+    }
+
+    .review__text {
+        margin-top: 5%;
+        font: 400 .9em 'Comfortaa', sans-serif;
+    }
+
+    /* LEARNING OUTCOMES */
+    .title-h1 {
+        font-size: 1.5em;
+    }
+
+    .learning-outcomes__text {
+        font: 500 .9em 'Comfortaa', sans-serif;
+    }
+
+}
