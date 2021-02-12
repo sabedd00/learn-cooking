@@ -1,0 +1,263 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/header_bg.png) no-repeat fixed center;
+    background-size: cover;
+    transform: translateZ(-999px) scale(1.07);
+}
+
+.header__content,
+.menu__content,
+.additional-culinary-articles__content,
+.reviews__content,
+.learning-outcomes__content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.header-logo__img {
+    margin-top: 10%;
+}
+
+.header__title {
+    margin: 10% 0 0;
+    font-size: 4em;
+    color: white;
+}
+
+.header__text {
+    margin: 2% 7% 0 7%;
+    padding-bottom: 5%;
+    font-size: 1em;
+    color: white;
+}
+
+/* MENU */
+.menu {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #ece9e9;
+}
+
+.title-h1 {
+    font-size: 2em;
+}
+
+.dish {
+    display: inline-block;
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    vertical-align: top;
+}
+
+.subtitle-h6 {
+    margin-bottom: -1%;
+    font: 300 1em 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.dish-ingredients__text {
+    padding: 0 12% 0 12%;
+    font: 1em 'Open Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+/* ADDITIONAL CULINARY ARTICLES  */
+.additional-culinary-articles {
+    padding: 5% 0 5% 0;
+}
+
+.additional-culinary-articles__item {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+    vertical-align: top;
+}
+
+.additional-culinary-articles__img {
+    height: 400px;
+    background-size: cover;
+}
+
+.article-illustration-tl {
+    background-image: url("../images/article_illuctration_tl.jpeg");
+}
+
+.article-illustration-tr {
+    background-image: url("../images/article_illustration_tr.jpeg");
+}
+
+.article-illustration-b {
+    background-image: url("../images/article_illustration_b.jpeg");
+}
+
+.subtitle-h3 {
+    margin-top: 15%;
+    padding: 0 10% 0 10%;
+    font-size: 2em;
+}
+
+.additional-culinary-articles__link,
+.learning-outcomes__link {
+    position: relative;
+    padding-bottom: 1%;
+    font: 400 1em 'Comfortaa', sans-serif;
+    text-decoration: none;
+    text-underline-position: under;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.0;
+    color: black;
+}
+
+.additional-culinary-articles__link:hover,
+.learning-outcomes__link:hover {
+    text-decoration: none;
+}
+
+.additional-culinary-articles__link:after,
+.learning-outcomes__link:after {
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, .5, 0, 1);
+    border-radius: 1em;
+    border-top: .1em solid #000000;
+    content: "";
+}
+
+.additional-culinary-articles__link:hover:after,
+.learning-outcomes__link:hover:after {
+    right: 0;
+}
+
+/* REVIEWS */
+.reviews {
+    background-color: #ece9e9;
+}
+
+.first-review {
+    padding-top: 1%;
+}
+
+.first-review__img {
+    display: inline-block;
+    height: 350px;
+    width: 45%;
+    background-image: url("../images/illustration_of_the_first_review.jpeg");
+    background-size: cover;
+}
+
+.first-review__content {
+    display: inline-block;
+    width: 45%;
+    margin: 1% 0 0 5%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.second-review {
+    padding: 3% 0 5% 0;
+}
+
+.second-review__img {
+    float: right;
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    background-image: url("../images/illustration_of_the_second_review.jpeg");
+    background-size: cover;
+}
+
+.second-review__content {
+    display: inline-block;
+    width: 40%;
+    margin: 3% 5% 0 5%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.subtitle-h4 {
+    font: 300 1em 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title-h2 {
+    font-size: 2em;
+}
+
+.review__text {
+    margin-top: 5%;
+    font: 500 1em 'Comfortaa', sans-serif;
+}
+
+/* LEARNING OUTCOMES */
+.learning-outcomes {
+    padding: 4% 0 5% 0;
+}
+
+.learning-outcomes__text {
+    margin: 1% 0 2% 0;
+    font: 500 1em 'Comfortaa', sans-serif;
+}
+
+.slideshow-of-learning-outcomes {
+    height: 300px;
+    width: 100%;
+    margin: 0 0 2% 0;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideshow-of-learning-outcomes > div {
+    width: 2526px;
+    background: url(../images/slideshow_of_learning_outcomes.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideshow-of-learning-outcomes .first-mover-of-slideshow {
+    animation: moveSlideshow 8s linear infinite;
+}
+
+.slideshow-of-learning-outcomes .second-mover-of-slideshow {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -300px;
+    animation: moveSlideshow 8s linear infinite;
+}
+
+.slideshow-of-learning-outcomes:hover .second-mover-of-slideshow {
+    opacity: 1;
+}
+
+@keyframes moveSlideshow {
+    80% {
+        transform: translateX(-41%);
+    }
+}
+
+/* FOOTER */
+.footer {
+    padding: 1%;
+    background-color: #ece9e9;
+    text-align: center;
+}
+
+.footer__text {
+    font: 500 .9em 'Comfortaa', sans-serif;
+}
