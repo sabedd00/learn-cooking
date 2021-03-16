@@ -3,9 +3,6 @@
 <p>
   Learn Cooking is a page containing only HTML and CSS code, it also has a slideshow animation and is adaptive for mobile. </a>
 </p>  
-<p>
-  Clone the repo: https://github.com/sabedd00/learn-cooking.git
-</p>
 <table>
   <img src="./docs/images/main.png">
   <tr>
